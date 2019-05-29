@@ -9,7 +9,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "lint": "",
+    "lintme": "echo 'Show me how to live'",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"

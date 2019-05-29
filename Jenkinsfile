@@ -11,8 +11,8 @@ pipeline {
         }   
         stage('Lintified'){
             steps{
-                echo 'Linting'
-                //bat 'lint'
+                //echo 'Linting'
+                bat 'lintme'
             }
 
         }     
