@@ -11,7 +11,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                echo 'Du är dum'
+                echo 'Testing'
             }
         }
         stage('Deploy') {
