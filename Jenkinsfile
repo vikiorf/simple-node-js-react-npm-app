@@ -24,7 +24,12 @@ pipeline {
             steps {
                 bat 'npm install -g serve'
                 bat 'serve -s build'
-                //echo 'Deploying....'
+                //echo 'Deploying....'                
+            }
+        }
+        stage('Eject'){
+            steps{
+                bat 'npm eject'
             }
         }
     }
