@@ -8,7 +8,14 @@ pipeline {
             steps {
                 bat 'npm install'
             }
-        }        
+        }   
+        stage('Lintified'){
+            steps{
+                echo 'Linting'
+                //bat 'lint'
+            }
+
+        }     
         stage('Build Production files') {
                 steps {
                     bat 'npm run build'
@@ -22,10 +29,10 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                bat 'npm install -g serve'
-                bat 'serve -s build'
-                bat 'npm eject'
-                //echo 'Deploying....'                
+                // bat 'npm install -g serve'
+                // bat 'serve -s build'
+                // bat 'npm eject'
+                echo 'Deploying....'                
             }
         }
         // stage('Eject'){
