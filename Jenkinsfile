@@ -12,7 +12,7 @@ pipeline {
         stage('Lintified'){
             steps{
                 //echo 'Linting'
-                bat 'lintme'
+                bat 'npm run lintme'
             }
 
         }     
