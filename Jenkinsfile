@@ -11,8 +11,8 @@ pipeline {
         }
         stage('Test') {
             steps {
-                //bat 'npm test'
-                echo 'Testing'
+                bat 'npm run test -- -- coverage'
+                //echo 'Testing'
             }
         }
         stage('Deploy') {
