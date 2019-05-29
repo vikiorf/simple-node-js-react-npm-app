@@ -13,9 +13,7 @@ pipeline {
                 steps {
                     bat 'npm run build'
                 }
-            }
-
-        }
+            }        
         stage('Test') {
             steps {
                 bat 'npm run test -- --coverage'
