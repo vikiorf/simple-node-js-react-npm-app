@@ -8,9 +8,8 @@ pipeline {
             steps {
                 bat 'npm install'
             }
-        }
-        stage {
-            stage('Build Production files'){
+        }        
+        stage('Build Production files') {
                 steps {
                     bat 'npm run build'
                 }
